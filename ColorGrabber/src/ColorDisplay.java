@@ -83,10 +83,11 @@ public class ColorDisplay extends JFrame
 		lblHex = new JLabel("hex");
 
 		//Change labels to fixed-width font
-		lblDisplayCoord.setFont(new Font("Monospaced", Font.BOLD, 12));
-		lblDisplayRGB.setFont(new Font("Monospaced", Font.BOLD, 12));
-		lblDisplayHSV.setFont(new Font("Monospaced", Font.BOLD, 12));
-		lblDisplayHex.setFont(new Font("Monospaced", Font.BOLD, 12));
+		Font font = new Font("Monospaced", Font.BOLD, 12);
+		lblDisplayCoord.setFont(font);
+		lblDisplayRGB.setFont(font);
+		lblDisplayHSV.setFont(font);
+		lblDisplayHex.setFont(font);
 
 		//Add labels to panels
 		panels[0].add(lblDisplayCoord);
